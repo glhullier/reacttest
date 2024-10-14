@@ -1,6 +1,8 @@
 import CareScale from "./CareScale";
 import "../styles/PlantItem.css";
 
+//Vous allez créer un composant PlantItem qui sera un composant enfant de ShoppingList.
+
 function PlantItem({ id, cover, name, water, light }) {
   //PlantItem prend les 5 props
   return (

@@ -6,6 +6,7 @@ export const plantList = [
     category: "classique",
     id: "1ed",
     isBestSale: true,
+    //J'ai également ajouté une variable  isSpecialOffer   à  true   pour les plantes qui sont en promotion. Votre mission est d'afficher un élément  div  qui contient le mot “Soldes” si la plante est en promotion.
     light: 2,
     water: 3,
     cover: monstera,
