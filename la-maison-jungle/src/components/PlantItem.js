@@ -1,13 +1,13 @@
 import CareScale from "./CareScale";
 import "../styles/PlantItem.css";
 
-//Vous allez créer un composant PlantItem qui sera un composant enfant de ShoppingList.
+function handleClick(plantName) {
+  alert(`Vous voulez acheter 1 ${plantName}? Très bon choix 🌱✨`);
+}
 
-function PlantItem({ id, cover, name, water, light }) {
-  //PlantItem prend les 5 props
+function PlantItem({ cover, name, water, light }) {
   return (
-    //Les props name et cover sont directement utilisées
-    <li key={id} className="lmj-plant-item">
+    <li className="lmj-plant-item" onClick={() => handleClick(name)}>
       <img className="lmj-plant-item-cover" src={cover} alt={`${name} cover`} />
       {name}
       <div>
